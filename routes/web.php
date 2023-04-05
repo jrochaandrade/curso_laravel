@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 
 
-Route::get('/model', function(){
+//Route::get('/model', function(){
 
     //$products = App\Models\Product::all();
 
@@ -38,6 +38,6 @@ Route::get('/model', function(){
 
     //return $products;
 
-});
+//});
 
 //Código acima deu erro não fez igual na aula
