@@ -17,17 +17,17 @@ class DatabaseSeeder extends Seeder
 
         //$this->call(UsersTableSeeder::class);
 
-        //\App\Models\User::factory(50)->create();
+        \App\Models\User::factory(40)->create();
 
         //O código abaixou eu criei para testar.
 
-        \App\Models\User::factory()->create([
-            'name' => 'Administrator',
-            'email' => 'admin@admin.com',
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-            'remember_token' => 'testetetete',
-        ]);
+       // \App\Models\User::factory()->create([
+       //     'name' => 'Administrator',
+       //     'email' => 'admin@admin.com',
+       //     'email_verified_at' => now(),
+        //    'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+       //     'remember_token' => 'testetetete',
+       // ]);
 
         //\App\Models\User::factory()->create([
          //    'name' => 'Test User',

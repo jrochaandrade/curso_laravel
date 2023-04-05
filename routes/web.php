@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\Product;
+use App\Models\User;
+use App\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,12 +20,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/model', function(){
 
- //   $products = \App\Product::all();
 
-  //  return $products;
+Route::get('/model', function(){
 
-//});
+    //$products = App\Models\Product::all();
+
+       //$user = new \App\User();
+      // $user->name = 'Usuário teste';
+      // $user->name = 'email@teste.com';
+      // $user->password = bcrypt('12345678');
+
+       //return $user->save();
+
+    //return \App\User::all();
+
+
+    //return $products;
+
+});
 
 //Código acima deu erro não fez igual na aula
