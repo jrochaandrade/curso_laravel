@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
 
         //$this->call(UsersTableSeeder::class);
 
-        //\App\Models\User::factory(10)->create();
+        //\App\Models\User::factory(50)->create();
 
         //O código abaixou eu criei para testar.
 
@@ -29,8 +29,8 @@ class DatabaseSeeder extends Seeder
             'remember_token' => 'testetetete',
         ]);
 
-       // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
+        //\App\Models\User::factory()->create([
+         //    'name' => 'Test User',
          //    'email' => 'test@example.com',
         // ]);
     }
