@@ -17,17 +17,19 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => fake()->name(),
+            'description'=> fake()->sentence(),
+            'slug'=> fake()->slug(),
         ];
     }
 }
 
-$factory->define(\App\Category::class, function ($faker) {
+//$factory->define(\App\Category::class, function ($faker) {
 
-    return [
-        'name' => $faker->name,
-        'description'=> $faker->sentence,
-        'slug'=> $faker->slug,
-    ];
+//    return [
+//        'name' => $faker->name,
+//        'description'=> $faker->sentence,
+//        'slug'=> $faker->slug,
+//    ];
 
-});
+//});

@@ -14,6 +14,9 @@ class StoreTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Store::all()->each(function ($store) {
+            $store->user_id = \App\Models\User::inRandomOrder()->first()->id;
+            $store->save();
+        });
     }
 }

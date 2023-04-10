@@ -18,19 +18,23 @@ class StoreFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => fake()->name(),
+            'description'=> fake()->sentence(),
+            'phone'=> fake()->phoneNumber(),
+            'mobile_phone'=> fake()->phoneNumber(),
+            'slug'=> fake()->slug(),
         ];
     }
 }
 
-$factory->define(\App\Store::class, function ($faker) {
+//$factory->define(\App\Store::class, function ($faker) {
 
-    return [
-        'name' => $faker->name,
-        'description'=> $faker->sentence,
-        'phone'=> $faker->phoneNumber,
-        'mobile_phone'=> $faker->phoneNumber,
-        'slug'=> $faker->slug,
-    ];
+//    return [
+//        'name' => $faker->name,
+//        'description'=> $faker->sentence,
+//        'phone'=> $faker->phoneNumber,
+//        'mobile_phone'=> $faker->phoneNumber,
+//        'slug'=> $faker->slug,
+//    ];
 
-});
+//});
